@@ -4,12 +4,6 @@
  <meta charset="UTF-8">
  <title>Panels</title>
  <link rel="stylesheet" href="css/app.css">
-<script>
- var data = new Date();
- var todaysDate = (data.getMonth() + ' ' +  data.getDate() + ", " + data.getFullYear());
- var timeStamp = document.querySelector('.time-stamp');
-  document.write(timeStamp.innerHTML = todaysDate);
-</script>
 </head>
 <body>
 <header>
@@ -55,5 +49,11 @@
  </ul>
 </footer>
 
+<script>
+ var data = new Date();
+ var todaysDate = (data.getMonth() + ' ' +  data.getDate() + ", " + data.getFullYear());
+ var timeStamp = document.querySelector('.time-stamp');
+ timeStamp.innerHTML = todaysDate;
+</script>
 </body>
 </html>
