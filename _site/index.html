@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Panels</title>
+ <link rel="stylesheet" href="css/app.css">
+<script>
+ var data = new Date();
+ var todaysDate = (data.getMonth() + ' ' +  data.getDate() + ", " + data.getFullYear());
+ var timeStamp = document.querySelector('.time-stamp');
+  document.write(timeStamp.innerHTML = todaysDate);
+</script>
+</head>
+<body>
+<header>
+  <section class="time-stamp"></section>
+  <section class="avatar">
+   <img src="img/me.png" alt="">
+  </section>
+  <section class="title">
+   <h1>P.E. Butler III</h1>
+   <h2>Front-End Developer</h2>
+  </section>
+</header>
+<section class="hero"></section>
+
+<main>
+ <article>
+  <h2>Featured Work</h2>
+  <section>
+   <a href="#">
+    <img src="img/stock.jpg" alt="">
+    <h3>Project 3</h3>
+   </a>
+  </section>
+  <section>
+   <a href="#">
+    <img src="img/stock.jpg" alt="">
+    <h3>Project 3</h3>
+   </a>
+  </section>
+  <section>
+   <a href="#">
+    <img src="img/stock.jpg" alt="">
+    <h3>Project 3</h3>
+   </a>
+  </section>
+ </article>
+</main>
+<footer>
+ <ul>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+ </ul>
+</footer>
+
+</body>
+</html>
