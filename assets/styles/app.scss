@@ -5,15 +5,16 @@ $row-width: 100%;
 $offWhite  : darken(#fff, 10%);
 $white     : #ffffff;
 $black     : #000000;
+$blue      : #00adb5;
 h1,h2,h3,h4,h5,h6 {
   font-weight: 200;
   text-transform: uppercase;
 }
 header {
   @include grid-row;
-  section.avatar {
+  section.logo {
     @include grid-column(8);
-    border-right: 1px solid $offWhite;
+    // border-right: 1px solid $offWhite;
     height: 100%;
     img {
      margin-top: 1em;
@@ -21,7 +22,7 @@ header {
      height: auto;
      width: 150px;
      border-radius: 100%;
-     border: 10px solid $offWhite;
+     border: .5em solid $blue;
     }
   }
   section.title {
@@ -39,14 +40,26 @@ header {
       }
     }
   }
-}
-section.hero {
- @include grid-column(12);
- background: url(../img/hero.jpg) no-repeat center center;
- background-size: cover;
- border-top: .5em solid $offWhite;
- border-bottom: .2em solid $offWhite;
- min-height: 300px;
+ section.hero {
+  @include grid-column(12);
+  background: url(../img/hero.jpg) no-repeat center center;
+  background-size: cover;
+  border-top: .1em solid $blue;
+  border-bottom: .1em solid $blue;
+  min-height: 300px;
+  text-align: center;
+  h2 {
+   font-size: 72px;
+   font-weight: 400;
+   letter-spacing: 10px;
+   color: $white;
+   text-shadow: 1px 1px 10px darken($offWhite, 50%);
+   transform: translateY(40%);
+  }
+  h3 {
+  font-size: 48px;
+  }
+ }
 }
 main {
  @include grid-row;
