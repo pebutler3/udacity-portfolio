@@ -7,16 +7,18 @@
 </head>
 <body>
 <header>
-  <section class="time-stamp"></section>
-  <section class="avatar">
-   <img src="img/me.png" alt="">
+  <section class="logo">
+   <img src="img/logo.svg" alt="">
   </section>
   <section class="title">
    <h1>P.E. Butler III</h1>
    <h2>Front-End Developer</h2>
+   <section class="time-stamp"></section>
+  </section>
+  <section class="hero">
+  <h2>Handcrafted</h2>
   </section>
 </header>
-<section class="hero"></section>
 
 <main>
  <article>
@@ -51,7 +53,7 @@
 
 <script>
  var data = new Date();
- var todaysDate = (data.getMonth() + ' ' +  data.getDate() + ", " + data.getFullYear());
+ var todaysDate = ("<h3>[ " + data.getMonth() + '/' +  data.getDate() + "/" + data.getFullYear() + " ]</h3>");
  var timeStamp = document.querySelector('.time-stamp');
  timeStamp.innerHTML = todaysDate;
 </script>
