@@ -1,0 +1,19 @@
+@media #{$small-only} {
+	header {
+		section.hero {
+			h2 {
+				font-size: 36px;
+				transform: translateY(100px);
+			}
+		}
+		section.logo {
+			@include grid-column(3);
+			height: 100%;
+		}
+		section.title {
+			@include grid-column(9);
+			margin-top: 1em;
+			text-align: right;
+		}
+	}
+}
