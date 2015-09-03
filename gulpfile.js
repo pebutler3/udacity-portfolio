@@ -9,7 +9,7 @@ var paths = {
   'assets' : './assets'
 }
 
-gulp.task('serve', ['fileinclude','styles'], function() {
+gulp.task('serve', function() {
     watchOptions: {
         ignoreInitial: true
     }
