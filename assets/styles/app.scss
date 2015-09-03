@@ -1,14 +1,17 @@
 @import "01-plugins/plugins";
 @import "02-partials/partials";
-
+@import "03-media/media";
 main {
  @include grid-row;
  article {
    @include grid-column(12);
    margin-bottom: 2em;
+   line-height: 10px;
    h2 {
      margin-left: .6em;
-     text-transform: uppercase;
+   }
+   h4 {
+     text-transform: lowercase;
    }
    a {
      display: inline-block;
