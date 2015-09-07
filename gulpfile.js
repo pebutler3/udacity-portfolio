@@ -4,6 +4,7 @@ var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
   minifyCss = require('gulp-minify-css'),
   concat = require('gulp-concat'),
+  autoprefixer = require('gulp-autoprefixer'),
   fileinclude = require('gulp-file-include');
 var paths = {
   'assets' : './assets'
@@ -47,7 +48,11 @@ gulp.task('styles', function(){
   .pipe(plumber())
   .pipe(sass())
   .pipe(concat('app.css'))
-  .pipe(minifyCss())
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  // .pipe(minifyCss())
   .pipe(gulp.dest('./_site/css'));
 });
 
