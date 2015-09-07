@@ -1,9 +1,9 @@
 @media #{$small-only} {
 	header {
 		section.hero {
+			position: relative;
 			h2 {
 				font-size: 36px;
-				transform: translateY(100px);
 			}
 		}
 		section.logo {
