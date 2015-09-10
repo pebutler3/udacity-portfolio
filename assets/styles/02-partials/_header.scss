@@ -1,17 +1,9 @@
 $row-width: 100%;
 header {
   @include grid-row;
-  section.udacity {
-    background: #f28C25;
-    color: $white;
-    margin-top: -1.2em;
-    text-align: center;
-    text-transform: uppercase;
-  }
   section.logo {
     @include grid-column(8);
     img {
-      
       margin-top: 1.5em;
       margin-bottom: 1em;
       height: auto;
@@ -48,7 +40,9 @@ header {
       font-weight: 400;
       letter-spacing: 10px;
       text-transform: uppercase;
-      transform: translateY(40%);
+      -webkit-transform: translate(10px, 80px);
+      -ms-transform: translate(10px, 80px);
+      transform: translate(10px, 50px);
     }
   }
 }
