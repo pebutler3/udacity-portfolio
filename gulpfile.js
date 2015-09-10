@@ -4,6 +4,7 @@ var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
   minifyCss = require('gulp-minify-css'),
   concat = require('gulp-concat'),
+  uglify = require('gulp-uglify'),
   autoprefixer = require('gulp-autoprefixer'),
   fileinclude = require('gulp-file-include');
 var paths = {
@@ -54,6 +55,15 @@ gulp.task('styles', function(){
   }))
   // .pipe(minifyCss())
   .pipe(gulp.dest('./_site/css'));
+});
+
+gulp.task('scripts', function(){
+  gulp.src([
+    paths.assets + '/js/app.js',
+  ])
+  .pipe(concat('app.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('./_site/js'));
 });
 
 gulp.task('default', ['styles']);
