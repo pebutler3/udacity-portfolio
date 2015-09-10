@@ -1,8 +1,25 @@
 footer {
   @include grid-row;
-  clear: both;
   display: block;
   border-top: 10px solid;
   width: 100%;
   margin-top: 4em;
+  ul {
+    display: inline-block;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    background: $black;
+    color: $white;
+    padding: .5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    &[data-twitter] {
+      background: #52abf2;
+      border-left: 3px solid $black;
+    }
+  }
 }
