@@ -3,18 +3,13 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
- <title>Panels</title>
+ <title>Welcome -> P.E. Butler III</title>
  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 @@include('../assets/includes/header.html')
 @@include('../assets/includes/main.html')
 @@include('../assets/includes/footer.html')
-<script>
- var data = new Date();
- var todaysDate = ("<h3>[ " + data.getMonth() + '/' +  data.getDate() + "/" + data.getFullYear() + " ]</h3>");
- var timeStamp = document.querySelector('.time-stamp');
- timeStamp.innerHTML = todaysDate;
-</script>
+<script src="js/app.js"></script>
 </body>
 </html>
